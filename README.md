@@ -9,7 +9,8 @@ em desktops, com um design que reflete a confiança e a qualidade dos serviços 
 
 <h1>Projeto Figma</h1>
 <h2>Tela de Login</h2>
-<img src="images/363414528-e8ab9fd2-0c87-4432-beea-e994909f8146.png" alt="Imagem de Login">
-
+<img src="images/Login.png" alt="Imagem de Login">
+<br>  
 <h2>Página Principal</h2>
-<img src="images/363414626-149bac9a-e41d-4b2a-862c-83c6a0d030a9.png" alt="Tela Principal">
+<img src="images/Principal.png" alt="Tela Principal">
+<br>
