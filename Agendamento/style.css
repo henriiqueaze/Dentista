@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E0F7FA;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/*Parte da sidebar*/
+.sidebar {
+    width: 250px;
+    background-color: #82C7D9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed; 
+    top: 0;          
+    left: 0;
+    height: 100vh;   
+    overflow-y: auto; 
+    z-index: 1000;   
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar nav ul li.active {
+    background-color: white;
+    color: #82C7D9;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.sidebar nav ul li .icon {
+    margin-right: 10px;
+}
+
+.legend {
+    font-size: 14px;
+    color: white;
+}
+
+.legend p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.red-circle,
+.purple-circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.red-circle {
+    background-color: red;
+}
+
+.purple-circle {
+    background-color: purple;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .icons span {
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header .user-info {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.calendar {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.calendar .month-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar .plus {
+    background-color: #82C7D9;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.calendar .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.calendar .dates span {
+    padding: 5px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calendar .dates span:hover {
+    background-color: #E0F7FA;
+}
+
+.calendar .dates span:nth-child(7n),
+.calendar .dates span:nth-child(7n+1) {
+    color: red; /*Isso destaca os domingos e sábados*/
+}
