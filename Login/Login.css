@@ -77,8 +77,8 @@ body {
 
 .right-panel { /*fundo lado direito*/
     font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-weight: 700;
+    font-style: normal;
     background-color: white;
     width: 55%; 
     display: flex;
@@ -142,6 +142,13 @@ body {
   font-weight: 700;
   font-style: normal;
     background-color: #5aa9aa;
+}
+
+.esqueceu-senha {
+    font-family: "Poppins", sans-serif;
+    padding-left: 400px;
+    padding-top: 10px;
+    color: #6EC1C2;
 }
 
 img {
