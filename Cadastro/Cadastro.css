@@ -32,12 +32,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    padding: 60px 40px; 
+    padding: 60px 40px;
     text-align: left; 
 }
 
 .left-panel .logo {
-    width: 200px; 
+    width: 200px;
     height: auto;
     margin-bottom: 30px;
 }
@@ -88,7 +88,7 @@ body {
     padding: 60px 40px; 
 }
 
-.right-panel h2 {   /*login*/
+.right-panel h2 {   /*crie sua conta*/
     font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -108,11 +108,12 @@ body {
 
 .input-container {
     width: 100%;
-    max-width: 500px; 
+    max-width: 500px;
+    margin-bottom: 20px;
     position: relative;
 }
 
-.input-container input { /*borda dos botoes*/
+.input-container input { 
     font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -129,7 +130,7 @@ body {
   font-style: normal;
     color: white;
     border: none;
-    padding: 18px 150px; 
+    padding: 18px 150px;
     border-radius: 50px;
     font-size: 18px; 
     background-color: #6EC1C2;

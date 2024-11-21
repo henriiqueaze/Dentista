@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Paciente.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo"><a href="/Home/Home.html"><span>🏠</span>Início</div></a>
+            <nav>
+                <ul>
+                    <li><span class="icon">📅</span><a href="/Agendamento/Agendamento.html">Agendamento</a></li>
+                    <li><span class="icon">👤</span><a href="/Registrar Pacientes/Registrar Paciente.html">Cadastrar</a></li>
+                    <li><span class="icon">🧑‍⚕</span><a href="/Paciente/Paciente.html" class="agendamento-link">Pacientes</a></li>
+                    <li><span class="icon">📊</span><a href="/Relatorio/Relatório.html">Relatórios</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="main-content">
+            <header>
+                <div class="icons">
+                    <span>🔔</span>
+                    <span>⚙️</span>
+                </div>
+                <div class="user-info">Minha Conta</div>
+            </header>
+            <div class="select-container">
+                <label for="name-select"></label>
+                <select id="name-select">
+                    <option value="Airton Gomes da Silva">Airton Gomes da Silva</option>
+                    <option value="Brendo Dias Machado">Brendo Dias Machado</option>
+                    <option value="Camilly Dantas Galdino">Camilly Dantas Galdino</option>
+                    <option value="Erica Samires da Silva">Erica Samires da Silva</option>
+                    <option value="Francisco Neto dos Santos">Francisco Neto dos Santos</option>
+                    <option value="Guilherme dos Santos">Guilherme dos Santos</option>
+                    <option value="Henrique de Assis Vieira">Henrique de Assis Vieira</option>
+                    <option value="Irineu dos Santos Macedo">Irineu dos Santos Macedo</option>
+                </select>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Pesquisar nome..." />
+            </div>
+            <div class="name-list" id="name-list">
+                <a href="#">Airton Gomes da Silva</a>
+                <a href="#">Brendo Dias Machado</a>
+                <a href="#">Camilly Dantas Galdino</a>
+                <a href="#">Erica Samires da Silva</a>
+                <a href="#">Francisco Neto dos Santos</a>
+                <a href="#">Guilherme dos Santos</a>
+                <a href="#">Henrique de Assis Vieira</a>
+                <a href="#">Irineu dos Santos Macedo</a>
+            </div>
+        </main>
+    </div>
+</body>

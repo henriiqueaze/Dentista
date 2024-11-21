@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios</title>
+    <link rel="stylesheet" href="Relatório.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo"><a href="/Home/Home.html"><span>🏠</span>Início</div></a>
+            <nav>
+                <ul>
+                    <li><span class="icon">📅</span><a href="/Agendamento/Agendamento.html">Agendamento</a></li>
+                    <li><span class="icon">👤</span><a href="/Registrar Pacientes/Registrar Paciente.html">Cadastrar</a></li>
+                    <li><span class="icon">🧑‍⚕</span><a href="/Paciente/Paciente.html">Pacientes</a></li>
+                    <li><span class="icon">📊</span><a href="/Relatorio/Relatório.html" class="relatorios-link">Relatórios</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="main-content">
+            <header>
+                <div class="icons">
+                    <span>🔔</span>
+                    <span>⚙️</span>
+                </div>
+                <div class="user-info">Minha Conta</div>
+            </header>
+
+          
+            <section class="relatorios">
+                <form class="form-relatorios">
+                    <div class="campo">
+                        <label for="paciente">Paciente</label>
+                        <select id="paciente" name="paciente">
+                            <option value=""></option>
+                        >
+                        </select>
+                    </div>
+                
+                    <div class="campo">
+                        <label for="data-de">Data de</label>
+                        <input type="date" id="data-de" name="data-de">
+                    </div>
+                
+                    <div class="campo">
+                        <label for="data-ate">Data até</label>
+                        <input type="date" id="data-ate" name="data-ate">
+                    </div>
+                </form>
+
+               
+                <div class="campos-editaveis-horizontal">
+                    <div class="campo-balao">
+                        <label for="entradas">Entradas No Consultório</label>
+                        <input type="text" id="entradas" name="entradas" placeholder="">
+                    </div>
+                    <div class="campo-balao">
+                        <label for="procedimentos">Procedimentos</label>
+                        <input type="text" id="procedimentos" name="procedimentos" placeholder="">
+                    </div>
+                    <div class="campo-balao">
+                        <label for="total-gasto">Total Gasto</label>
+                        <input type="text" id="total-gasto" name="total-gasto" placeholder="">
+                    </div>
+                </div>
+
+                <button type="button" id="gerar-relatorio">Gerar Relatório</button>
+            </section>
+        
+        </main>
+    </div>
+</body>
+</html>

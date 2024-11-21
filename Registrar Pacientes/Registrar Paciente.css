@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E0F7FA;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #82C7D9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    height: 100%;
+}
+
+.logo {
+    font-size: 18px;
+    color: #82C7D9;
+    padding-left: 30%;
+    padding-top: 04%;
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    background-color: white;
+    padding: 10px 55px;
+    border-radius: 20px;
+    
+}
+
+.sidebar nav ul {
+    padding-top: 90%;
+    list-style: none;
+
+}
+
+.sidebar nav ul li {
+    padding-top: 10%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #82C7D9;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.sidebar nav ul li:nth-last-child(3) {
+    background-color: #6da8b7; /* Altere para a cor desejada */
+}
+
+/* Efeito hover no botão "Agendamento" */
+.sidebar nav ul li:nth-last-child(3):hover {
+    background-color: #4a8a97; /* Altere para a cor desejada */
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .icons {
+    display: flex; 
+    gap: 10px; 
+}
+
+header .icons span {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+header .user-info {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #6da8b7;
+    gap: 15px; 
+}
+
+.center-box {
+    width: 800px; 
+    height: 600px;
+    background-color: white; 
+    position: absolute; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.inner-box {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 5%; 
+    left: 4%; 
+    background-color: #EEEEEE; 
+    border-radius: 5px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.user-icon {
+    font-size: 220px;
+    position: absolute;
+    top: 5%; 
+    left: 11%; 
+    color: #82C7D9;
+}
+
+
+.top-boxes {
+    width: 250px;
+    height: 85px;
+    position: absolute;
+    top: 4%; 
+    left:  29%; 
+    background-color: white; 
+    border-radius: 25px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+    
+}
+
+.white-box1 {
+    width: 250px;
+    height: 85px;
+    position: absolute;
+    top: 20%; 
+    left: 25%; 
+    font-size: 43px;
+    font-style: italic;
+    color: #82C7D9;
+}
+.input-container {
+    width: 43%;
+    max-width: 400px;
+    margin: 20px 0;
+    position: absolute;
+    top: 1%;
+    left: 55%;
+}
+.input-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 40px 0;
+    border: none;
+    background-color: #EEEEEE;
+    border-radius: 50px;
+    font-size: 20px; 
+}
+.input-container i {
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 40px;
+    color: #EEEEEE;
+    font-size: 50px;
+}
+.input-icon2{
+    width: 70%;
+    position: absolute;
+    margin-left: -415px;
+
+}
+.input-icon3{
+    width: 70%;
+    position: absolute;
+    margin-left: -140px;
+
+}
+
+.input-icon4{
+    width: 60%;
+    position: absolute;
+    margin-left: 130px;
+}
+
+.input-icon5{
+    width: 73%;
+    position: absolute;
+    margin-left: -145px;
+    margin-top: 130px;
+}
+.input-icon6 {
+    width: 70%;
+    max-width: 400px;
+    margin-left: -420px;
+    margin-top: 130px; 
+}
+.input-icon7 {
+    width: 55%;
+    max-width: 400px;
+    margin-left: 130px;
+    margin-top: -135px; 
+}
+
+.data1{
+    font-size: 20px;
+    position: absolute;
+    margin-top: 430px;
+    margin-left: 35px;
+    color: #b6b6b6;
+}
+
+.data2{
+    font-size: 18px;
+    position: absolute;
+    margin-top: 430px;
+    margin-left: 580px;
+    color: #b6b6b6;
+}
+
+#gerar-relatorio {
+    display: block;
+    width: 100%;
+    margin: 700px auto 0 auto;
+    padding: 20px 20px;
+    font-size: 30px;
+    border-radius: 100px;
+    border: white;
+    background-color: #82C7D9;
+    color: white;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    max-width: 300px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+#gerar-relatorio:hover {
+    background-color: #059fbb;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Paciente</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Registrar Paciente.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo"><a href="/Home/Home.html"><span>🏠</span>Início</div></a>
+            <nav>
+                <ul>
+                    <li><span class="icon">📅</span><a href="/Agendamento/Agendamento.html">Agendamento</a></li>
+                    <li><span class="icon">👤</span><a href="Registrar Paciente.html" class="agendamento-link" >Cadastrar</a></li>
+                    <li><span class="icon">🧑‍⚕</span><a href="/Paciente/Paciente.html">Pacientes</a></li>
+                    <li><span class="icon">📊</span><a href="/Relatorio/Relatório.html">Relatórios</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="main-content">
+            <header>
+                <div class="icons">
+                    <span>🔔</span>
+                    <span>⚙️</span>
+                </div>
+                <div class="user-info">Minha Conta</div>
+            </header>
+            <div class="center-box">
+                <div class="inner-box">
+                    <i class="fas fa-user user-icon"></i> 
+                </div>
+                <div><i class="data1">Data de cadastro</i></div>
+                <div><i class="data2">Data de Nascimento</i></div>
+                <div class="input-container">
+                    <div class="input-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="nome" placeholder="Nome">
+                    </div>
+                    <div class="input-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-icon2">
+                        <input type="nome" placeholder="Numero de cadastro">
+                    </div>
+                    <div class="input-icon3">
+                        <input type="tel" placeholder="Numero de Contato 1">
+                    </div>
+                    <div class="input-icon4">
+                        <input type="idade" placeholder="Idade">
+                    </div>
+                    <div class="input-icon5">
+                        <input type="nome" placeholder="Numero de contato 2">
+                    </div>
+                    <div class="input-icon6">
+                        <input type="date" placeholder="Input 6">
+                    </div>
+                    <div class="input-icon7">
+                        <input type="date" placeholder="Input 6">
+                    </div>
+            </div>
+            <button type="button" id="gerar-relatorio">Cadastrar</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
